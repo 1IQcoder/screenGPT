@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="eel.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>screenGPT</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 style="margin-left: 20px;" class="title">screenGPT 1.0</h1>
+            <div class="header_buttons" style="margin-right: 20px;">
+                <button class="button1" id="startDriver">start</button>
+                <button class="button1" id="stopDriver">stop</button>
+                <button class="button1 additionalButton" id="settings" data-open=".account_data">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
+                </button>
+            </div>
+        </header>
+        <div id="alrtMes" class="alertMessage flex-center green">test</div>
+        <main>
+            <div class="content">
+                <span style="width: 100%; text-align: center; margin-bottom: 20px;">Задайте вопрос</span>
+                <!-- <div class="chat_block">
+                    <div class="avatare_circle mr-right-10"></div>
+                    <div class="chat_right">
+                        <div>
+                            <span class="title2">You:</span>
+                        </div>
+                        <div class="p_text mr-top-10">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure magni quasi, ab ipsa, ullam totam assumenda nihil facilis quia nesciunt, sit rem! Praesentium porro ipsum est tempora molestiae nisi. Accusantium.
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="additionals_wrapper active">
+                <div>
+                    <h3 class="title2 mr-bottom-10">Account</h3>
+                    <div>
+                        <div class="input_div mr-bottom-10">
+                            <span>email:</span>
+                            <input placeholder="email" name="email" type="email">
+                        </div>
+                        <div class="input_div mr-bottom-10">
+                            <span>password:</span>
+                            <input placeholder="password" name="password" type="password">
+                        </div>
+                        <div class="input_div">
+                            <span>auto login:</span>
+                            <input name="auto_login" type="checkbox">
+                        </div>
+                        <button id="save_account_data">Save</button>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="title2 mr-bottom-10">Settings</h3>
+                    <div>
+                        <div class="input_div mr-bottom-10">
+                            <span>email:</span>
+                            <input placeholder="email" type="email">
+                        </div>
+                        <div class="input_div mr-bottom-10">
+                            <span>password:</span>
+                            <input placeholder="password" type="password">
+                        </div>
+                        <div class="input_div">
+                            <span>auto login:</span>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="input_block_wrapper">
+            <div class="input_block">
+                <textarea class="text1" name="" id="inputPrompt" cols="30" rows="1" placeholder="Message ChatGPT...">что такое postgreSQL</textarea>
+                <button id="sendPrompt" class="flex-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-white dark:text-black">
+                        <path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
